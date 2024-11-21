@@ -51,7 +51,7 @@
     <linkfile dest=".d4.bazelrc" src="device.bazelrc"/>
   </project>
   <project path="private/devices/google/lynx" name="kernel_devices_google_lynx" groups="partner,lynx" remote="helluva" >
-    <linkfile dest="build_lynx.sh" src="build_pantah.sh"/>
+    <linkfile dest="build_lynx.sh" src="build_lynx.sh"/>
     <linkfile dest="private/google-modules/soc/gs/arch/arm64/boot/dts/google/devices/lynx" src="dts/google"/>
     <linkfile dest=".d5.bazelrc" src="device.bazelrc"/>
   </project>
