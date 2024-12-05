@@ -6,7 +6,7 @@
   <remote name="helluva"
     fetch="ssh://git@ssh.gitlab.hentaios.com:2052/hentaios-gs-6.x/"
     revision="refs/heads/Vallhound" />
-  <default revision="refs/tags/android-15-qpr2-beta-1_r0.9"
+  <default revision="refs/tags/android-16-preview-1_r0.9"
     remote="aosp" sync-j="4" />
 
   <project path="aosp" name="common" groups="partner" remote="helluva" >
@@ -41,7 +41,7 @@
     <linkfile dest=".d2.bazelrc" src="device.bazelrc"/>
   </project>
   <project path="private/devices/google/bluejay" name="kernel_devices_google_bluejay" groups="partner,bluejay" remote="helluva" >
-    <linkfile dest="build_raviole.sh" src="build_raviole.sh"/>
+    <linkfile dest="build_bluejay.sh" src="build_bluejay.sh"/>
     <linkfile dest="private/google-modules/soc/gs/arch/arm64/boot/dts/google/devices/bluejay" src="dts/google"/>
     <linkfile dest=".d3.bazelrc" src="device.bazelrc"/>
   </project>
@@ -97,7 +97,7 @@
   <project path="private/google-modules/uwb/qorvo/qm35" name="kernel/google-modules/uwb/qorvo/qm35" groups="partner" />
   <project path="private/google-modules/video/gchips" name="kernel/google-modules/video/gchips" groups="partner" />
   <project path="private/google-modules/video/gchips_whi" name="google-modules_video_gchips_whi" groups="partner" remote="helluva" />
-  <project path="private/google-modules/nfc" name="kernel/google-modules/nfc" groups="partner" revision="31bb2a5b3a105e0a2b8c06526ff9bbfac7f8aa9e" />
+  <project path="private/google-modules/nfc" name="kernel/google-modules/nfc" groups="partner" />
   <project path="private/google-modules/wlan/bcm4398" name="google-modules_wlan_bcmdhd_bcm4398" groups="partner" remote="helluva" />
   <project path="private/google-modules/wlan/bcm4390" name="kernel/google-modules/wlan/bcmdhd/bcm4390" groups="partner" />
   <project path="private/google-modules/wlan/bcm4389" name="google-modules_wlan_bcmdhd_bcm4389" groups="partner" remote="helluva" />
