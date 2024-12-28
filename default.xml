@@ -3,11 +3,15 @@
 
   <remote  name="aosp"
     fetch="https://android.googlesource.com/" />
+  <remote name="rna"
+    fetch="ssh://git@github.com/Reinazhard/"
+    revision="refs/heads/Ursamoon" />
+
   <default revision="android-gs-raviole-5.10-android15-qpr1"
     remote="aosp" sync-j="4" />
 
   <project path="aosp" name="kernel/common" groups="partner" />
-  <project path="private/gs-google" name="kernel/gs" groups="partner" >
+  <project path="private/gs-google" name="crispy-goggles" groups="partner" remote="rna" >
     <linkfile dest="build.config" src="build.config.slider"/>
     <linkfile dest="build_slider.sh" src="build_slider.sh"/>
     <linkfile dest="build_mixed.sh" src="build_mixed.sh"/>
